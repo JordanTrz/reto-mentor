@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo_principal">Order Summary</h1>
+    </header>
+    <body>
+        <p class="texto">You can now listen millions of songs</p>
+        <p class="texto">audiobooks, and podcasts on any device</p>
+        <p class="texto">anywhere you like!</p>
+        <form action="registro.com" method="POST">
+            <fieldset>
+                <legend id="titulo">Annual Plan</legend>
+                <label for="name">Ingrese nombre</label>
+                <input id="nombre" type="text" name="name" placeholder="Ingrese nombre"><br><br>
+                <label for="apellido">Ingrese apellido</label>
+                <input id="apellido" type="text" name="apellido" placeholder="Ingrese apellido"><br><br>
+                <label for="pay">Seleccione plan</label><br>
+                <select name="plan" id="plan">
+                    <option value="Premium">Premium $99.99</option>
+                    <option value="Classic">Classic $69.99</option>
+                    <option value="basic">Basic $39.99</option>
+                </select><br><br>
+                <button id="pay" type="submit">Proceed to payment</button><br><br>
+                <button id="cancel"  type="submit">Cancel order</button>
+            </fieldset>
+
+        </form>
+    </body>
+    
+</body>
+</html>
