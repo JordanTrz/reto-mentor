@@ -6,32 +6,32 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <h1 id="titulo_principal">Order Summary</h1>
-    </header>
-    <body>
-        <p class="texto">You can now listen millions of songs</p>
-        <p class="texto">audiobooks, and podcasts on any device</p>
-        <p class="texto">anywhere you like!</p>
-        <form action="registro.com" method="POST">
-            <fieldset>
-                <legend id="titulo">Annual Plan</legend>
-                <label for="name">Ingrese nombre</label>
-                <input id="nombre" type="text" name="name" placeholder="Ingrese nombre"><br><br>
-                <label for="apellido">Ingrese apellido</label>
-                <input id="apellido" type="text" name="apellido" placeholder="Ingrese apellido"><br><br>
-                <label for="pay">Seleccione plan</label><br>
-                <select name="plan" id="plan">
-                    <option value="Premium">Premium $99.99</option>
-                    <option value="Classic">Classic $69.99</option>
-                    <option value="basic">Basic $39.99</option>
-                </select><br><br>
-                <button id="pay" type="submit">Proceed to payment</button><br><br>
-                <button id="cancel"  type="submit">Cancel order</button>
-            </fieldset>
-
-        </form>
-    </body>
+    <div class="card">
+      <div class="card__container">
+        <div class="card__body">
+          <div class="card__img">
+            <img src="./images/illustration-hero.svg" alt="hero banner">
+          </div>
+          <h1 class="card__title"> Order Summary</h1>
+          <div class="card__desc">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</div>
+          <div class="card__plan">
+              <div class="card__logo">
+                <img src="./images/icon-music.svg" alt="music icon">
+              </div>
+              <div class="card__price">
+                <div class="card__plan-name">Annual Plan</div>
+                <div class="card__plan-price">$59.99/year</div>
+              </div>
+            <div class="card__change">
+              <a href="#">Change</a>
+            </div>
+          </div>
+          <div class="card__payment"><a href="">Proceed to Payment</a></div>
+          <div class="card__cancel"><a href="">Cancel Order</a></div>
+        </div>
+      </div>
+    </div>  
     
-</body>
+  
+  </body>
 </html>
